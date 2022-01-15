@@ -162,6 +162,22 @@ function deleter(e) {
  
 }
 
+//pause,resume and stop
+
+let a=document.getElementById("a")
+let b=document.getElementById("b")
+let c=document.getElementById("c")
+
+  a.addEventListener("click",(e)=>{
+    synth.pause();
+  })
+
+  b.addEventListener("click",(e)=>{
+    synth.resume();
+  })
 
 
-
+ c.addEventListener("click",(e)=>{
+    synth.cancel();
+    
+  })

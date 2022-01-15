@@ -42,10 +42,7 @@
             width: 50%;
             margin: auto;
         }
-tbody{
-    border-radius: 5px !important;
 
-}
         #historyhead {
             margin-top: 150px;
         }
@@ -66,6 +63,19 @@ tbody{
         }
         #no{
             text-align: center;
+        }
+        tbody{
+            border-bottom:10px solid rgb(26, 9, 51);
+            
+        }
+        tr{
+            
+            justify-content: center;
+        }
+        #speakcontrol{
+            width:30%;
+          display: flex;
+          margin:auto;
         }
     </style>
     <h1 class="text-center mt-4">Text <span class="text-muted"> To </span> <span class="text-success">Speech</span></h1>
@@ -91,12 +101,22 @@ tbody{
     </select>
     <button type="button" class="btn btn-outline-primary mt-4" id="btn">Speak</button>
 
+    <div id="speakcontrol" class="mt-4">
+        
+    <button class="btn btn-outline-primary" id="a">pause</button>
+    <button class="btn btn-outline-primary" id="b">resume</button>
+    <button class="btn btn-outline-primary" id="c">stop</button>
+
+    </div>
     <table class="table  mt-4 mb-5" id="table">
         <h1 class="text-center" id="historyhead">HISTORY</h1>
 
 
 
     </table>
+
+
+
     <script src="app.js"></script>
 </body>
 
